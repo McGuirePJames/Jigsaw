@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from './components';
+import { ResizeBox } from './components';
 
 window.onload = () => {
     ReactDOM.render(
-        <Button>Hello World</Button>,
+        <ResizeBox>Hello World</ResizeBox>,
         document.getElementById('mount')
     );
 }

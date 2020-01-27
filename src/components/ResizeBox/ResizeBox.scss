@@ -1,0 +1,59 @@
+.resize-box-component {
+    .resize-box {
+        background-color: blue;
+        position: relative;
+        left: 100px;
+        top: 100px;
+
+        .resize-box__border {
+            position: absolute;
+            background-color: orange;
+
+            &:hover {
+                > svg {
+                    display: inline-block !important;
+                }
+            }
+
+            &-top {
+                top: 0;
+                height: 4px;
+                width: 100%;
+
+                &:hover {
+                    cursor: url('../../assets/images/arrows-v.svg') 12 12, auto;
+                }
+            }
+
+            &-right {
+                right: 0;
+                height: 100%;
+                width: 4px;
+
+                &:hover {
+                    cursor: url('../../assets/images/arrows-h.svg') 12 12, auto;
+                }
+            }
+
+            &-bottom {
+                bottom: 0;
+                height: 4px;
+                width: 100%;
+
+                &:hover {
+                    cursor: url('../../assets/images/arrows-v.svg') 12 12, auto;
+                }
+            }
+
+            &-left {
+                left: 0;
+                height: 100%;
+                width: 4px;
+
+                &:hover {
+                    cursor: url('../../assets/images/arrows-h.svg') 12 12, auto;
+                }
+            }
+        }
+    }
+}
